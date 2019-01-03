@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextAnswerCell" id="gTV-IL-0wX" customClass="TextAnswerCell" customModule="Quiz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="suL-Qr-mtG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7E-wf-src">
+                                <rect key="frame" x="60" y="15" width="300" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bqz-ic-LjO">
+                                <rect key="frame" x="15" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="58H-Ns-2Qa"/>
+                                    <constraint firstAttribute="width" secondItem="Bqz-ic-LjO" secondAttribute="height" multiplier="1:1" id="ioI-RT-B5V"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETs-aF-r8y">
+                                <rect key="frame" x="60" y="69" width="300" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="qap-Id-WwG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ETs-aF-r8y" secondAttribute="trailing" constant="15" id="4ad-vW-DEJ"/>
+                            <constraint firstItem="ETs-aF-r8y" firstAttribute="leading" secondItem="suL-Qr-mtG" secondAttribute="leading" constant="60" id="JpB-ew-6HM"/>
+                            <constraint firstItem="Bqz-ic-LjO" firstAttribute="centerY" secondItem="suL-Qr-mtG" secondAttribute="centerY" id="T5e-f5-tX7"/>
+                            <constraint firstItem="P7E-wf-src" firstAttribute="leading" secondItem="Bqz-ic-LjO" secondAttribute="trailing" constant="15" id="TD6-4K-jDo"/>
+                            <constraint firstItem="Bqz-ic-LjO" firstAttribute="leading" secondItem="suL-Qr-mtG" secondAttribute="leading" constant="15" id="YC1-Qn-bDA"/>
+                            <constraint firstAttribute="trailing" secondItem="P7E-wf-src" secondAttribute="trailing" constant="15" id="ejL-7z-K4T"/>
+                            <constraint firstAttribute="bottom" secondItem="P7E-wf-src" secondAttribute="bottom" constant="15" id="g2n-GE-Kdh"/>
+                            <constraint firstAttribute="bottom" secondItem="ETs-aF-r8y" secondAttribute="bottom" id="oQt-Td-erA"/>
+                            <constraint firstItem="P7E-wf-src" firstAttribute="top" secondItem="suL-Qr-mtG" secondAttribute="top" constant="15" id="rOF-2Y-L9a"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="suL-Qr-mtG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5ae-SJ-mp2"/>
+                <constraint firstItem="suL-Qr-mtG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="E2Y-Su-w9V"/>
+                <constraint firstAttribute="trailing" secondItem="suL-Qr-mtG" secondAttribute="trailing" id="cWb-BS-abh"/>
+                <constraint firstAttribute="bottom" secondItem="suL-Qr-mtG" secondAttribute="bottom" id="mxC-qk-u7m"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="answerLabel" destination="P7E-wf-src" id="LZC-i8-vlT"/>
+                <outlet property="checkImageView" destination="Bqz-ic-LjO" id="dhr-78-USP"/>
+            </connections>
+            <point key="canvasLocation" x="136.80000000000001" y="147.52623688155924"/>
+        </collectionViewCell>
+    </objects>
+</document>
