@@ -100,6 +100,7 @@ class QuizFormViewDisplayCollection: NSObject, DisplayCollection {
 extension QuizFormViewDisplayCollection: DisplayCollectionAction {
     
     func didSelect(indexPath: IndexPath) {
+        guard displayType == .default else { return }
         let type = sections[indexPath.section]
         switch type {
         case .answer:
