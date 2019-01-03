@@ -66,6 +66,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbK-n3-ZDw">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-left-arrow " translatesAutoresizingMaskIntoConstraints="NO" id="aSs-lw-ozZ">
+                                        <rect key="frame" x="8" y="16" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Gwm-M5-84K"/>
+                                            <constraint firstAttribute="height" constant="20" id="cOt-RD-PZB"/>
+                                        </constraints>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jND-7j-WlZ">
                                         <rect key="frame" x="15" y="5" width="55" height="40"/>
                                         <constraints>
@@ -88,13 +95,24 @@
                                             <action selector="nextTap:" destination="OBS-0X-KcL" eventType="touchUpInside" id="z8e-t2-UwI"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Nb5-v8-YL4">
+                                        <rect key="frame" x="347" y="16" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="3MC-sz-kru"/>
+                                            <constraint firstAttribute="width" constant="20" id="TGF-M3-Y1b"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="WF1-Re-eEa" secondAttribute="trailing" constant="15" id="C4J-TR-QMl"/>
+                                    <constraint firstItem="Nb5-v8-YL4" firstAttribute="centerY" secondItem="WF1-Re-eEa" secondAttribute="centerY" constant="1" id="GLR-c1-HjC"/>
                                     <constraint firstItem="jND-7j-WlZ" firstAttribute="top" secondItem="HbK-n3-ZDw" secondAttribute="top" constant="5" id="Lz2-DP-iPS"/>
                                     <constraint firstItem="WF1-Re-eEa" firstAttribute="bottom" secondItem="jND-7j-WlZ" secondAttribute="bottom" id="ZRM-oI-QaO"/>
                                     <constraint firstItem="WF1-Re-eEa" firstAttribute="top" secondItem="HbK-n3-ZDw" secondAttribute="top" constant="5" id="cvC-eJ-fwv"/>
+                                    <constraint firstItem="aSs-lw-ozZ" firstAttribute="centerY" secondItem="jND-7j-WlZ" secondAttribute="centerY" constant="1" id="dLy-gH-lOZ"/>
+                                    <constraint firstItem="aSs-lw-ozZ" firstAttribute="leading" secondItem="HbK-n3-ZDw" secondAttribute="leading" constant="8" id="gUf-IC-qF5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nb5-v8-YL4" secondAttribute="trailing" constant="8" id="vrE-jf-IVd"/>
                                     <constraint firstItem="jND-7j-WlZ" firstAttribute="leading" secondItem="HbK-n3-ZDw" secondAttribute="leading" constant="15" id="ysh-iu-Qui"/>
                                 </constraints>
                             </view>
@@ -150,4 +168,8 @@
             <point key="canvasLocation" x="87" y="125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon-left-arrow " width="24" height="24"/>
+        <image name="icon-right_arrow" width="24" height="24"/>
+    </resources>
 </document>

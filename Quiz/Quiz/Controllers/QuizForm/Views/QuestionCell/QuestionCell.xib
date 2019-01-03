@@ -49,7 +49,7 @@
                                     <constraint firstAttribute="width" constant="35" id="CTh-7X-M6w"/>
                                     <constraint firstAttribute="height" constant="35" id="ylo-AG-InU"/>
                                 </constraints>
-                                <state key="normal" image="icon-right_answer"/>
+                                <state key="normal" image="icon-info"/>
                                 <connections>
                                     <action selector="infoButtonPress:" destination="gTV-IL-0wX" eventType="touchUpInside" id="eFb-J4-klZ"/>
                                 </connections>
@@ -90,6 +90,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="icon-right_answer" width="24" height="24"/>
+        <image name="icon-info" width="24" height="24"/>
     </resources>
 </document>
